@@ -2,10 +2,21 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://use.fontawesome.com/e0df85f983.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+
     <title>Hello!</title>
 </head>
 <body>
-
-<h1>Hello!</h1>
+    <div class="container">
+        <div id="search-form">
+            <input id="searchInput" type="text" placeholder="Search username..."/>
+            <button id="searchBtn" class="buttons" onclick="search()">Search</button>
+        </div>
+        <div id="result"></div>
+        <div id="error"></div>
+    </div>
 </body>
 </html>
