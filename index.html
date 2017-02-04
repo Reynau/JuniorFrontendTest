@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
+<head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://use.fontawesome.com/e0df85f983.js"></script>
-
     <link rel="stylesheet" href="css/styles.css">
-
-    <title>Hello!</title>
 </head>
 <body>
-    <div class="container">
-        <div id="search-form">
-            <input id="searchInput" type="text" placeholder="Search username..."/>
-            <button id="searchBtn" onclick="search()">Search</button>
+<div class="container">
+    <div id="search-form">
+        <input id="searchInput" type="text" placeholder="Search username..."/>
+        <button id="searchBtn" class="buttons" onclick="search()">Search</button>
+    </div>
+    <div id="result">
+        <div class="profile">
+            <div id="image"></div>
+            <div id="data">
+                <div id="username"></div>
+                <div id="fullname"></div>
+                <div id="bio"></div>
+            </div>
         </div>
-        <div id="result">
-            <div class="profile"></div>
-            <div class="repositories"></div>
-        </div>
-        <div id="error">
-            Does not exist
+        <div class="repositories">
+            <h2>Repositories</h2>
+            <ul id="repo-list">
+
+            </ul>
         </div>
     </div>
+    <div id="error">
+        Does not exist
+    </div>
+</div>
 
-    <script src="js/client.js"></script>
+<script src="js/client.js"></script>
 </body>
 </html>
