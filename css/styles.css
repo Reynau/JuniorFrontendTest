@@ -39,20 +39,19 @@ img {
     display: block;
     width: 20vh;
     height: auto;
-    border-radius: 5px;
 }
 .container {
     border-radius: 6px;
-    padding: 2vh 10px;
-    margin: 2vh 15px;
+    padding: 2vh 1vh;
+    margin: 2vh 1vh;
     box-shadow: 5px 5px 15px grey;
 }
 
 #search-form {
     text-align: center;
-    margin-bottom: 2vh;
 }
 #result {
+    margin-top: 2vh;
     display: none;
     overflow-y: auto;
     max-height: 85vh;
@@ -116,9 +115,6 @@ img {
         width: 100%;
         height: auto;
         overflow: auto;
-    }
-    img {
-        margin: 0 16vh;
     }
     input {
         width: 60%;
