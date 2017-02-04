@@ -15,18 +15,31 @@ function search () {
           if (xmlHttp.readyState == 4) {
             if (xmlHttp.status == 200) {
               var repos_json = JSON.parse(xmlHttp.responseText);
-              console.log(user_json);
-              console.log(repos_json);
+              processData(user_json, repos_json);
             }
-            else console.log('error');
+            else searchNotFound();
           }
         };
         xmlHttp.open("GET", url + "/repos", true); // true for asynchronous
         xmlHttp.send(null);
       }
-      else console.log('error');
+      else searchNotFound();
     }
   };
   xmlHttp.open("GET", url, true); // true for asynchronous
   xmlHttp.send(null);
+}
+
+function processData (user_json, repos_json) {
+  resultElem.style.display = 'block';
+  errorElem.style.display = 'none';
+
+  console.log(user_json);
+  console.log(repos_json);
+}
+
+
+function searchNotFound () {
+  resultElem.style.display = 'none';
+  errorElem.style.display = 'block';
 }
