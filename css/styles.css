@@ -25,11 +25,20 @@ button {
 button:hover {
     border:2px solid #aaa;
 }
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
 
+img {
+    width: 20%;
+    height: auto;
+    border-radius: 3px;
+    margin-right: 2%;
+}
 .container {
-    max-height: 85vh;
     border-radius: 15px;
-    padding: 20px;
+    padding: 20px 10px;
     margin: 20px;
     box-shadow: 5px 5px 15px grey;
 }
@@ -37,6 +46,10 @@ button:hover {
 #search-form {
     text-align: center;
     margin-bottom: 15px;
+}
+#result {
+    display: none;
+    overflow-y: auto;
 }
 
 #error {
@@ -46,4 +59,39 @@ button:hover {
     border-radius: 5px;
     background-color: #FFA1A1;
     color: #700;
+}
+.profile {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+#data {
+    display: inline-block;
+    max-width: 78%;
+    float: left;
+}
+#username {
+    font-style: italic;
+    font-size: small;
+}
+#fullname {
+    font-size: 2em;
+    font-weight: bold;
+}
+.wrapper {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: solid 1px darkgrey;
+    display: inline-block;
+}
+.left {
+    text-align: left;
+    float: left;
+    width: 70%;
+}
+.right {
+    text-align: right;
+    float: right;
+    width: 25%;
 }
