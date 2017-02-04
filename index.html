@@ -13,10 +13,17 @@
     <div class="container">
         <div id="search-form">
             <input id="searchInput" type="text" placeholder="Search username..."/>
-            <button id="searchBtn" class="buttons" onclick="search()">Search</button>
+            <button id="searchBtn" onclick="search()">Search</button>
         </div>
-        <div id="result"></div>
-        <div id="error"></div>
+        <div id="result">
+            <div class="profile"></div>
+            <div class="repositories"></div>
+        </div>
+        <div id="error">
+            Does not exist
+        </div>
     </div>
+
+    <script src="js/client.js"></script>
 </body>
 </html>

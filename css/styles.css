@@ -35,3 +35,11 @@ button:hover {
     text-align: center;
     margin-bottom: 15px;
 }
+
+#error {
+    padding: 15px;
+    border: 1px solid #FF0000;
+    border-radius: 5px;
+    background-color: #FFA1A1;
+    color: #700;
+}
